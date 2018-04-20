@@ -11,9 +11,9 @@
   
   <meta name="description" content="ProfileI am a slow walker, but I never walk backwards. —— Abraham Lincoln  大家好，我是『iTimeTraveler』。发音读起来有点长还拗口，灵感来自于电影《The Time Traveler’s Wife》（时间旅行者的妻子），有关时间，有关厮守，有关变化与永恒。 一介码农，平时主要记录一些开发笔记，聚焦于Androi">
 <meta property="og:type" content="website">
-<meta property="og:title" content="iTimeTraveler">
+<meta property="og:title" content="yida">
 <meta property="og:url" content="http://github.com/about/index.html">
-<meta property="og:site_name" content="iTimeTraveler">
+<meta property="og:site_name" content="yida">
 <meta property="og:description" content="ProfileI am a slow walker, but I never walk backwards. —— Abraham Lincoln  大家好，我是『iTimeTraveler』。发音读起来有点长还拗口，灵感来自于电影《The Time Traveler’s Wife》（时间旅行者的妻子），有关时间，有关厮守，有关变化与永恒。 一介码农，平时主要记录一些开发笔记，聚焦于Androi">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://github.com/gallery/campfire.gif">
@@ -95,7 +95,7 @@
               <a class="brand" style="
                  border-width: 0px;  margin-top: 8px;"  
                  >
-                  <img width="62px" height="75px" alt="Hike News" src="/gallery/avatar/0.jpg">
+                  <img width="62px" height="75px" alt="Hike News" src="/css/images/mylogo.jpg">
               </a>
             
             
@@ -109,10 +109,6 @@
                   <li> <a class="main-nav-link" href="../categories">分类</a> </li>
                 
                   <li> <a class="main-nav-link" href="../tags">标签</a> </li>
-                
-                  <li> <a class="main-nav-link" href="../funnysite">酷站</a> </li>
-                
-                  <li> <a class="main-nav-link" href="../collection">收藏</a> </li>
                 
                   <li> <a class="main-nav-link" href="">关于</a> </li>
                 
@@ -175,7 +171,7 @@
               
                 <div class="item active" style="max-height:600px; overflow: hidden;">
               
-                <img id="carousel-img0" src="https://source.unsplash.com/collection/954550/1920x1080">
+                <img id="carousel-img0" src="/css/images/home-bg.jpg" />
               </div>
 
               <!-- 自适应大图 -->
@@ -200,7 +196,7 @@
               
                 <div class="item" style="max-height:600px; overflow: hidden;">
               
-                <img id="carousel-img1" src="https://source.unsplash.com/collection/954550/1920x1081">
+                <img id="carousel-img1" src="/css/images/sample.jpg" />
               </div>
 
               <!-- 自适应大图 -->
@@ -219,6 +215,31 @@
 	                    }
 	                  };
               	  };
+                  carouselResize();
+              </script>
+
+
+              <div class="item" style="max-height:600px; overflow: hidden;">
+              
+                <img id="carousel-img2" src="/css/images/pose.jpg" />
+              </div>
+
+              <!-- 自适应大图 -->
+              <script>
+                  var carouselResize = function() {
+                    var h = document.body.clientHeight / 3;
+                    var img2 = new Image();
+                    var imageTag2 = document.getElementById("carousel-img2");
+                    img2.src = imageTag2.src;
+                    img2.onload=function(){
+                      if (img2.width / img2.height <= document.body.clientWidth / h) {
+                        imageTag2.style.width = document.body.clientWidth + "px";
+                      } else {
+                        imageTag2.style.height = h + "px";
+                        imageTag2.style.marginLeft = -(h * img2.width / img2.height - document.body.clientWidth) / 2 + "px";
+                      }
+                    };
+                  };
                   carouselResize();
               </script>
             
@@ -255,16 +276,16 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Profile"><a href="#Profile" class="headerlink" title=" Profile"></a><span class="fa fa-info-circle"></span> Profile</h3><blockquote class="pullquote right"><p><img src="/gallery/campfire.gif" alt=""><br>I am a slow walker, but I never walk backwards.</p>
-<p>—— <a href="https://en.wikipedia.org/wiki/Abraham_Lincoln" target="_blank" rel="noopener"><strong>Abraham Lincoln</strong></a></p>
+        <h3 id="Profile"><a href="#Profile" class="headerlink" title=" Profile"></a><span class="fa fa-info-circle"></span> Profile</h3><blockquote class="pullquote right"><p><img src="/css/images/persident.jpg" alt=""><br>I am a slow walker, but I never walk backwards.</p>
+<p>—— <a href="https://baike.baidu.com/item/%E8%B4%9D%E6%8B%89%E5%85%8B%C2%B7%E4%BE%AF%E8%B5%9B%E5%9B%A0%C2%B7%E5%A5%A5%E5%B7%B4%E9%A9%AC/190467?fr=aladdin&fromid=3073&fromtitle=%E5%A5%A5%E5%B7%B4%E9%A9%AC" target="_self" rel="noopener"><strong>Barack Hussein Obama</strong></a></p>
 </blockquote>
-<p>大家好，我是『<strong>iTimeTraveler</strong>』。发音读起来有点长还拗口，灵感来自于电影《The Time Traveler’s Wife》（时间旅行者的妻子），有关时间，有关厮守，有关变化与永恒。</p>
-<p>一介码农，平时主要记录一些开发笔记，聚焦于Android移动开发领域，正在深入Framework。</p>
-<p>喜欢一探究竟，寻根究底。偶尔也略懂，容易囫囵吞枣式学习。希望这些分享对你能有所帮助。</p>
+<p>大家好，我是『<strong>益达</strong>』，IT圈摸爬滚打已有5年6载，自知才疏学浅，故笨鸟先飞。然日月如梭，文籍如海，探讨不及，朱黄敢怠。</p>
+<p>一介码农，仍不忘初心，砥砺前行。</p>
+<p>爱好：听欧美流行/乡村音乐、看书、撸码，业余弹弹吉他。</p>
+<p>谢谢您长得那么好看，还那么关注我！</p>
 <h3 id="Social-Info"><a href="#Social-Info" class="headerlink" title=" Social Info"></a><span class="fa fa-share-alt"></span> Social Info</h3><ul>
-<li><span class="fa fa-envelope-o"></span> : <a href="mailto:xuewenlong_2008@sina.com" target="_blank" rel="noopener">iTime</a></li>
-<li><span class="fa fa-google-plus"></span> : <a href="https://plus.google.com/116515515454998359216" target="_blank" rel="noopener">iTimeTraveler</a></li>
-<li><span class="fa fa-github"></span> : <a href="https://github.com/iTimeTraveler">iTimeTraveler</a></li>
+<li><span class="fa fa-envelope-o"></span> : <a href="mailto:736031305@qq.com" target="_blank" rel="noopener">yida:736031305</a></li>
+<li><span class="fa fa-github"></span> : <a href="https://github.com/yida-lxw">yida-lxw</a></li>
 </ul>
 
       
@@ -279,8 +300,8 @@ var a = new Donate({
   title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
   btnText: '打赏支持', // 可选参数，打赏按钮文字
   el: document.getElementById('donation_div'),
-  wechatImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/WeChanQR.png',
-  alipayImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/AliPayQR.jpg'
+  wechatImage: '/css/images/WeChatQR.jpg',
+  alipayImage: '/css/images/AliPayQR.jpg'
 });
 </script>
       
@@ -296,7 +317,7 @@ var a = new Donate({
 		       if (typeof LivereTower === 'function') { return; }
 
 		       j = d.createElement(s);
-		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.src = '/js/embed.dist.js';
 		       j.async = true;
 
 		       e.parentNode.insertBefore(j, e);

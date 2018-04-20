@@ -54,7 +54,7 @@
 	vertical-align: text-bottom;
 	width: 32px;
 	height: 32px;
-	background: url("https://ooo.0o0.ooo/2017/03/09/58c1584d5fd9d.png")
+	background: url("/css/images/dot.png")
 }
 
 #donate-modal-container .donate-tab {
@@ -132,7 +132,7 @@
 	vertical-align: -0.2em;
 	width: 16px;
 	height: 16px;
-	background: url("https://ooo.0o0.ooo/2017/03/09/58c16b1f3eaa4.png") no-repeat
+	background: url("/css/images/qr.png") no-repeat
 }
 
 @keyframes blowUpModal {

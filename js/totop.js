@@ -12,13 +12,6 @@ $("#rocket").click(function() {
     return false;
 });
 
-$("#homelogo").click(function() {
-    $("html, body").animate({
-        scrollTop: $(window).height()
-    }, 1000, null);
-    return false;
-});
-
 var articleW = $('#main>article').css("width");
 
 $("#menu-switch").click(function() {

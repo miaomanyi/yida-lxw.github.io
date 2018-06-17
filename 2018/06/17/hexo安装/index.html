@@ -3,19 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>yida&#39;s blog</title>
+  <title>hexo安装 | yida&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+    <meta name="keywords" content="Hexo" />
   
   
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="yida&#39;s blog">
-<meta property="og:url" content="http://imyida.com/index.html">
+  
+  <meta name="description" content="Hexo安装npm install -g hexo-cli npm install hexo-server 创建hexo文件夹G:/hexo $ hexo init G:/hexo$ cd G:/hexo$ npm install 配置_config.yml： 123456789101112131415161718192021222324252627282930313233343536373839">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo安装">
+<meta property="og:url" content="http://imyida.com/2018/06/17/hexo安装/index.html">
 <meta property="og:site_name" content="yida&#39;s blog">
+<meta property="og:description" content="Hexo安装npm install -g hexo-cli npm install hexo-server 创建hexo文件夹G:/hexo $ hexo init G:/hexo$ cd G:/hexo$ npm install 配置_config.yml： 123456789101112131415161718192021222324252627282930313233343536373839">
 <meta property="og:locale" content="zh">
+<meta property="og:updated_time" content="2018-06-17T14:53:08.924Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yida&#39;s blog">
+<meta name="twitter:title" content="Hexo安装">
+<meta name="twitter:description" content="Hexo安装npm install -g hexo-cli npm install hexo-server 创建hexo文件夹G:/hexo $ hexo init G:/hexo$ cd G:/hexo$ npm install 配置_config.yml： 123456789101112131415161718192021222324252627282930313233343536373839">
   
     <link rel="alternate" href="/atom.xml" title="yida&#39;s blog" type="application/atom+xml">
   
@@ -44,11 +51,13 @@
   <link rel="stylesheet" href="/css/bootstrap.css" >
 
   
-    <link rel="stylesheet" href="/css/home.css" >
+    <link rel="stylesheet" href="/css/dialog.css">
   
 
   
 
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
   
 
   
@@ -61,182 +70,108 @@
 
 
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
-  
-    <header id="header">
-
-	<!-- 背景图模式 -->
-	
-
-    
-      <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(); background-size: auto 100%;">
-
-      <!-- Support rolling -->  
-        
-        <section class="awSlider">
-          <div class="carousel slide carousel-fade " data-ride="carousel">
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-               
-                  
-                    <div class="item active">
-                  
-                    <img id="carousel-img0" src="/css/images/home-bg.jpg">
-                  </div>
-
-                  <!-- 自适应大图 -->
-                  <script>
-                      var img0 = new Image();
-                      var imageTag0 = document.getElementById("carousel-img0");
-                      img0.src = imageTag0.src;
-                      img0.onload=function(){
-                        if (img0.width / img0.height <= document.body.clientWidth / document.body.clientHeight) {
-                          imageTag0.style.width = document.body.clientWidth + "px";
-                        } else {
-                          imageTag0.style.height = document.body.clientHeight + "px";
-                          imageTag0.style.marginLeft = -(document.body.clientHeight * img0.width / img0.height - document.body.clientWidth) / 2 + "px";
-                        }
-                      };
-                  </script>
-                
-                  
-                    <div class="item">
-                  
-                    <img id="carousel-img1" src="/css/images/sample.jpg">
-                  </div>
-
-                  <!-- 自适应大图 -->
-                  <script>
-                      var img1 = new Image();
-                      var imageTag1 = document.getElementById("carousel-img1");
-                      img1.src = imageTag1.src;
-                      img1.onload=function(){
-                        if (img1.width / img1.height <= document.body.clientWidth / document.body.clientHeight) {
-                          imageTag1.style.width = document.body.clientWidth + "px";
-                        } else {
-                          imageTag1.style.height = document.body.clientHeight + "px";
-                          imageTag1.style.marginLeft = -(document.body.clientHeight * img1.width / img1.height - document.body.clientWidth) / 2 + "px";
-                        }
-                      };
-                  </script>
-                
-                  
-                    <div class="item">
-                  
-                    <img id="carousel-img2" src="/css/images/pose.jpg">
-                  </div>
-
-                  <!-- 自适应大图 -->
-                  <script>
-                      var img2 = new Image();
-                      var imageTag2 = document.getElementById("carousel-img2");
-                      img2.src = imageTag2.src;
-                      img2.onload=function(){
-                        if (img2.width / img2.height <= document.body.clientWidth / document.body.clientHeight) {
-                          imageTag2.style.width = document.body.clientWidth + "px";
-                        } else {
-                          imageTag2.style.height = document.body.clientHeight + "px";
-                          imageTag2.style.marginLeft = -(document.body.clientHeight * img2.width / img2.height - document.body.clientWidth) / 2 + "px";
-                        }
-                      };
-                  </script>
-                
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Geri</span>
-            </a>
-            <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">İleri</span>
-            </a>
-          </div>
-        </section>
-        <script>
-          $('section.awSlider .carousel').carousel({
-              pause: '',
-              interval: 5000
-          });
-          var startImage = $('section.awSlider .item.active > img').attr('src');
-          $('section.awSlider .carousel').on('slid.bs.carousel', function () {
-              var bscn = $(this).find('.item.active > img').attr('src');
-              $('section.awSlider > img').attr('src', bscn);
-          });
-        </script>
-      
-
-    
- 
-
-
-    <canvas width="100%" height="100%"></canvas>
-    <script>
-      var c = document.getElementsByTagName('canvas')[0],
-          x = c.getContext('2d'),
-          w = window.innerWidth,
-          h = window.innerHeight,
-          pr = window.devicePixelRatio || 1,
-          f = 90,
-          q,
-          m = Math,
-          r = 0,
-          u = m.PI*2,
-          v = m.cos,
-          z = m.random
-      c.width = w*pr
-      c.height = h*pr
-      x.scale(pr, pr)
-      x.globalAlpha = 0.6
-
-      <!-- 折线Polyline背景 -->
-      
-    </script>
-    
-
-  <!-- 自适应主页背景大图 -->
-  
-
-  <div class="intro-navigate">
-      <p class="navigater-list">
-        
-          <a id="beautifont" class="main-nav-link" href="/">Home</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/archives">Archives</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/categories">Categories</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/tags">Tags</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/about">About</a>
-        
-        <a id="beautifont" class="main-nav-link" href="/mybooks">Books</a>
-      </p>
-  </div>
-
-</header>
   
   <div id="container">
     <div id="wrap">
       
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.jpg">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">Home</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">Archives</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">Categories</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">Tags</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">About</a> </li>
+                
+                <li><a class="main-nav-link" href="/mybooks">Books</a> </li>
+                <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;">
-  
-    <article id="post-Hexo安装"  class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-Hexo安装" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
       <header class="article-header">
         
   
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/06/17/hexo安装/">Hexo安装</a>
+    <h1 class="thumb" class="article-title" itemprop="name">
+      Hexo安装
     </h1>
   
 
@@ -252,6 +187,12 @@
     <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
 
       
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
     </div>
     <div class="article-entry" itemprop="articleBody">
       
@@ -277,20 +218,53 @@
 <h6 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a><strong>缩写</strong></h6><p>hexo n == hexo new<br>hexo g == hexo generate<br>hexo s == hexo server<br>hexo d == hexo deploy</p>
 <h2 id="生成并本地预览"><a href="#生成并本地预览" class="headerlink" title="生成并本地预览"></a>生成并本地预览</h2><p>hexo s -g </p>
 <h2 id="生成并上传"><a href="#生成并上传" class="headerlink" title="生成并上传"></a>生成并上传</h2><p>hexo d -g </p>
-<h2 id="如何让博文列表不显示全部内容"><a href="#如何让博文列表不显示全部内容" class="headerlink" title="如何让博文列表不显示全部内容"></a>如何让博文列表不显示全部内容</h2><p>在合适的位置加上
-        <!-- Hexo安装npm install -g hexo-cli
-npm install hexo-server
-创建hexo文件夹G:/hexo
-$ hexo init G:/hexo$ cd G:/hexo$ npm install
-配置_config.yml：
-123456789101112131415161718192021222324252627282930313233343536373......  -->
-        <p class="article-more-link">
-          <a href="/2018/06/17/hexo安装/#more">Read More</a>
-        </p>
+<h2 id="如何让博文列表不显示全部内容"><a href="#如何让博文列表不显示全部内容" class="headerlink" title="如何让博文列表不显示全部内容"></a>如何让博文列表不显示全部内容</h2><p>在合适的位置加上<a id="more"></a>即可</p>
+<h2 id="hexo如何删除某篇博客"><a href="#hexo如何删除某篇博客" class="headerlink" title="hexo如何删除某篇博客"></a>hexo如何删除某篇博客</h2><p>1.首先进入到source/_post 文件夹，删除该博客的md文件<br>2.重新生成并上传至github即执行hexo d -g</p>
+<h2 id="博客头部支持的配置属性说明"><a href="#博客头部支持的配置属性说明" class="headerlink" title="博客头部支持的配置属性说明"></a>博客头部支持的配置属性说明</h2><p>title: Hexo安装<br>layout: post<br>date: 2018-06-17 22:43:16<br>comments: true<br>post_catalog: true<br>tags: [Hexo]<br>categories: [Hexo]<br>keywords: Hexo<br>description: </p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">title: 博客标题</span><br><span class="line">layout: 可选值post,page,draft</span><br><span class="line">date: 博客的发布日期</span><br><span class="line">comments: 是否开启博客评论功能</span><br><span class="line">post_catalog: 是否在博客右侧显示博客大纲目录</span><br><span class="line">tags: 设置博客的标签,多个用[a,b,c]表示</span><br><span class="line">categories: 设置博客的分类,多个用[a,b,c]表示</span><br><span class="line">keywords: 设置博客的关键字,多个用[a,b,c]表示,用于SEO</span><br><span class="line">description: 博客的描述信息,可以不填</span><br></pre></td></tr></table></figure>
+
       
     </div>
     <footer class="article-footer">
       
+        <div id="donation_div"></div>
+
+<script src="/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: 'Donate', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: '/css/images/WeChatQR.jpg',
+  alipayImage: '/css/images/AliPayQR.jpg'
+});
+</script>
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
@@ -298,81 +272,33 @@ $ hexo init G:/hexo$ cd G:/hexo$ npm install
     </footer>
   </div>
   
-</article>
-
-<!-- Table of Contents -->
-
-  
-    <article id="post-Python学习笔记"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
     
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/06/17/python学习笔记/">Python学习笔记</a>
-    </h1>
   
+    <a href="/2018/06/17/python学习笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Python学习笔记</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/06/17/python学习笔记/" class="article-date">
-	  <time datetime="2018-06-17T13:56:59.000Z" itemprop="datePublished">2018-06-17</time>
-	</a>
-
-      
-    <a class="article-category-link" href="/categories/Python/">Python</a>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Python内置函数"><a href="#Python内置函数" class="headerlink" title="Python内置函数"></a>Python内置函数</h2><ul>
-<li>id()：返回对象的内存地址，返回值是只读的，不可修改</li>
-<li>type()：返回对象的数据类型</li>
-<li>divmod(x,y)：用于实现数学里的除法运算。第一个参数表示被除数，第二个参数表示除数，返回值为(a,b)形式，其中a表示商，b表示余数</li>
-<li>round(x,y)：实现对小数的四舍五入功能，第二个参数表示四舍五入过后保留几位小数</li>
-<li>abs(x)：求指定数字的绝对值</li>
-<li>str(x)：将数字转换成字符串，同理还有int()函数用于将字符串转换成数字</li>
-<li>dir(模块名)：查看指定模块中包含的可调用的函数名称</li>
-<li>help(模块名.函数名)：查阅指定函数的使用说明文档，例如：help(math.sin)</li>
-</ul>
-        <!-- Python内置函数
-id()：返回对象的内存地址，返回值是只读的，不可修改
-type()：返回对象的数据类型
-divmod(x,y)：用于实现数学里的除法运算。第一个参数表示被除数，第二个参数表示除数，返回值为(a,b)形式，其中a表示商，b表示余数
-round(x,y)：实现对小数的四舍五入功能，第二个参数表示四舍五入过后保留几位小数
-abs(x)：求指定数字的绝对值
-str(x)：将数......  -->
-        <p class="article-more-link">
-          <a href="/2018/06/17/python学习笔记/#more">Read More</a>
-        </p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
 <!-- Table of Contents -->
 
-  
-
-
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo安装"><span class="nav-number">1.</span> <span class="nav-text">Hexo安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建hexo文件夹"><span class="nav-number">2.</span> <span class="nav-text">创建hexo文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义配置文件"><span class="nav-number">3.</span> <span class="nav-text">自定义配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成"><span class="nav-number">4.</span> <span class="nav-text">生成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动服务"><span class="nav-number">5.</span> <span class="nav-text">启动服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改博客主题："><span class="nav-number">6.</span> <span class="nav-text">修改博客主题：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将博客上传到Github"><span class="nav-number">7.</span> <span class="nav-text">将博客上传到Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo常用命令"><span class="nav-number">8.</span> <span class="nav-text">hexo常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#缩写"><span class="nav-number">8.0.0.0.1.</span> <span class="nav-text">缩写</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成并本地预览"><span class="nav-number">9.</span> <span class="nav-text">生成并本地预览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成并上传"><span class="nav-number">10.</span> <span class="nav-text">生成并上传</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何让博文列表不显示全部内容"><span class="nav-number">11.</span> <span class="nav-text">如何让博文列表不显示全部内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo如何删除某篇博客"><span class="nav-number">12.</span> <span class="nav-text">hexo如何删除某篇博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客头部支持的配置属性说明"><span class="nav-number">13.</span> <span class="nav-text">博客头部支持的配置属性说明</span></a></li></ol>
+    
+    </div>
+  </aside>
 </section>
         
       </div>
-      
-        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
       
       <footer id="footer">
   
@@ -463,9 +389,9 @@ str(x)：将数......  -->
 <script src="/js/scripts.js"></script>
 
 
-  <script src="/js/home.js"></script>
 
 
+  <script src="/js/dialog.js"></script>
 
 
 
@@ -550,6 +476,8 @@ str(x)：将数......  -->
   
   <a id="rocket" href="#top" class=""></a>
   <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
   
 </body>
 </html>

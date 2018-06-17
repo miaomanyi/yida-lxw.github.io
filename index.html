@@ -255,16 +255,29 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><p>npm install -g hexo-cli</p>
+        <h2 id="安装前准备"><a href="#安装前准备" class="headerlink" title="安装前准备"></a>安装前准备</h2><h4 id="Windows上安装Node-JS"><a href="#Windows上安装Node-JS" class="headerlink" title="Windows上安装Node.JS"></a>Windows上安装Node.JS</h4><ol>
+<li>F:\node-v8.11.1-win-x64安装根目录下新建node_global和node_cache两个目录，</li>
+<li>F:\node-v8.11.1-win-x64下的整个node_modules目录剪切到新建的node_global目录下</li>
+<li>F:\node-v8.11.1-win-x64安装根目录下的node.exe、npm、npm.cmd、npx、npx.cmd文件剪切到F:\node-v8.11.1-win-x64\node_global目录下</li>
+</ol>
+<h4 id="配置系统环境变量"><a href="#配置系统环境变量" class="headerlink" title="配置系统环境变量"></a>配置系统环境变量</h4><p>NODEJS_HOME<br>F:\node-v8.11.1-win-x64\node_global</p>
+<p>PATH末尾追加;%NODEJS_HOME%</p>
+<p>NODE_PATH<br>F:\node-v8.11.1-win-x64\node_global\node_modules</p>
+<h4 id="安装express模块："><a href="#安装express模块：" class="headerlink" title="安装express模块："></a>安装express模块：</h4><p>npm install express -g</p>
+<blockquote>
+<p>可以手动指定从哪个镜像服务器下载资源:</p>
+<p>npm install -gd express –registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a></p>
+<p>为了避免每次都需要设置–registry，可以进行如下配置，从而一劳永逸</p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry http://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line">npm config set prefix "F:\node-v8.11.1-win-x64\node_global"</span><br><span class="line"></span><br><span class="line">npm config set cache "F:\node-v8.11.1-win-x64\node_cache"</span><br></pre></td></tr></table></figure>
+<h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><p>npm install -g hexo-cli</p>
 <p>npm install hexo-server</p>
 <h2 id="创建hexo文件夹"><a href="#创建hexo文件夹" class="headerlink" title="创建hexo文件夹"></a>创建hexo文件夹</h2><p>G:/hexo</p>
 <p>$ hexo init G:/hexo<br>$ cd G:/hexo<br>$ npm install</p>
-        <!-- Hexo安装npm install -g hexo-cli
-npm install hexo-server
-创建hexo文件夹G:/hexo
-$ hexo init G:/hexo$ cd G:/hexo$ npm install
-
-配置_config.yml：123456789101112131415161718192021222324252627282930313233343536373......  -->
+        <!-- 安装前准备Windows上安装Node.JS
+F:\node-v8.11.1-win-x64安装根目录下新建node_global和node_cache两个目录，
+F:\node-v8.11.1-win-x64下的整个node_modules目录剪切到新建的node_global目录下
+F:\node-v8.11.1-win-x64安装根目录下的node.exe、npm、npm.cmd、np......  -->
         <p class="article-more-link">
           <a href="/2018/06/17/hexo安装/#more">Read More</a>
         </p>

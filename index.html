@@ -302,30 +302,48 @@
 <!-- Table of Contents -->
 
   
-    <article id="post-Java中的异常传播(一)"  class="article article-type-post" itemscope itemprop="blogPost" >
+    <article id="post-java-exceptions_1"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/java-exceptions_1.html">Java中的异常传播(一)</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="article-meta">
       
-	<a href="/Java中的异常传播(一).html" class="article-date">
-	  <time datetime="2018-07-16T15:50:09.690Z" itemprop="datePublished">2018-07-16</time>
+	<a href="/java-exceptions_1.html" class="article-date">
+	  <time datetime="2018-07-16T15:58:57.000Z" itemprop="datePublished">2018-07-16</time>
 	</a>
 
       
+    <a class="article-category-link" href="/categories/Java/">Java</a>
+
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://github.com/yida-lxw/blog/blob/master/20180718/images/__1531497866_22167.jpg?raw=true" alt=""></p>
-<p><img src="https://github.com/yida-lxw/blog/blob/master/20180718/images/__1531499702_20289.gif?raw=true" alt=""></p>
-
+        <p>Java里的异常其实是一种信号，该信号表明了在代码执行过程中发生的一些重要的或未预测到的情况。举个例子，比如一个被请求的文件找不到了，或者一个数组的索引越界了，又或者某个网络连接失败了。在代码里针对上述情况进行显式检查很容易导致代码变得令人费解。Java提供了一种异常处理机制来系统性处理诸如此类的错误情况。</p>
+<p>这种异常机制是围绕着try-catch这种形式来构建的。throw一个异常就等价于发送了一个未预测到的错误情况发生了的信号。catch一个异常是为了采取合适的方式来处理这个异常。异常会被异常处理器捕获，在同一个上下文环境里，已经被抛出的异常不会再被捕获。程序运行时的行为决定了什么类型的异常将会被抛出，以及该如何捕获它们。throw-catch原理是嵌入在try-catch-finally结构里。<br>
+        <!-- Java里的异常其实是一种信号，该信号表明了在代码执行过程中发生的一些重要的或未预测到的情况。举个例子，比如一个被请求的文件找不到了，或者一个数组的索引越界了，又或者某个网络连接失败了。在代码里针对上述情况进行显式检查很容易导致代码变得令人费解。Java提供了一种异常处理机制来系统性处理诸如此类的错误情况。
+这种异常机制是围绕着try-catch这种形式来构建的。throw一个异常就等价于发......  -->
+        <p class="article-more-link">
+          <a href="/java-exceptions_1.html#more">Read More</a>
+        </p>
       
     </div>
     <footer class="article-footer">
       
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
     </footer>
   </div>
   
